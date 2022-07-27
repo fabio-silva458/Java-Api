@@ -7,7 +7,7 @@ import java.net.http.HttpResponse.BodyHandlers;
 public class App {
     public static void main(String[] args) throws Exception {
         //Tarefa: Criar uma conexão HTTP e buscar o Top 10 filmes.
-		String url = "https://raw.githubusercontent.com/alura-cursos/imersao-java/api/TopMovies.json";
+		String url = "https://api.mocki.io/v2/549a5d8b";
 		URI endereco = URI.create(url);
 		HttpClient cliente = HttpClient.newHttpClient();
 		HttpRequest request = HttpRequest.newBuilder(endereco).GET().build();
